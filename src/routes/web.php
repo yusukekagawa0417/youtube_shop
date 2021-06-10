@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// TOP
 Route::get('/', function () {
-    return view('welcome');
+    return view('top.index');
+});
+
+// お問い合わせ
+Route::get('/contact', function () {
+    return view('contact.index');
+});
+
+// プライバシーポリシー
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy.index');
 });
