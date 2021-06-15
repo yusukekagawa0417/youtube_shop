@@ -1,0 +1,11 @@
+.footer {
+  width: 80%;
+  margin: 0 auto 16px;
+  padding: 16px 0;
+  &__contents {
+    display: flex;    
+  }
+  &__link {
+    margin: 0 8px;
+  }
+}

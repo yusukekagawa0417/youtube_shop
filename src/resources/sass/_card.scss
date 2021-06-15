@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: solid 1px #CCCCCC;
+  &__image {
+    height: 50vw;
+    width: 33vw;
+  }
+  &__info {
+    padding: 8px;
+  }
+  &__rank {
+    margin-top: 8px;
+  }
+  &__title {
+    margin-top: 8px;
+  }
+  &__categories {
+    display: flex;
+    margin-top: 8px;
+  }
+  &__category {
+    margin-right: 8px;
+  }
+}

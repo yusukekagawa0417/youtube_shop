@@ -1,5 +1,9 @@
 @extends('layouts.app')
 @section('title', "プライバシーポリシー|" . config('app.name'))
 @section('content')
-    <h1>プライバシーポリシー</h1>
+    <section>
+        <div class="wrapper">
+            <h2>プライバシーポリシー</h2>
+        </div>
+    </section>
 @endsection

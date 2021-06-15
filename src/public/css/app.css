@@ -1,3 +1,64 @@
+.card {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: solid 1px #CCCCCC;
+}
+.card__image {
+  height: 50vw;
+  width: 33vw;
+}
+.card__info {
+  padding: 8px;
+}
+.card__rank {
+  margin-top: 8px;
+}
+.card__title {
+  margin-top: 8px;
+}
+.card__categories {
+  display: flex;
+  margin-top: 8px;
+}
+.card__category {
+  margin-right: 8px;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto 16px;
+  padding: 16px 0;
+}
+.footer__contents {
+  display: flex;
+}
+.footer__link {
+  margin: 0 8px;
+}
+
+.header {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+.header__title {
+  font-size: 24px;
+}
+.header__list {
+  display: flex;
+  margin: 0 0 0 8px;
+}
+
+.hero {
+  margin-bottom: 16px;
+}
+.hero__image {
+  height: 50vw;
+  width: 100vw;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,4 +111,8 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.wrapper {
+  margin: 0 8px 16px;
 }
