@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // TOP
 Route::get('/', function () {
-    return view('top.index');
+    return view('product.index');
 });
 
 // お問い合わせ
