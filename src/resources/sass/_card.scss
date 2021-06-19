@@ -7,19 +7,35 @@
     width: 33vw;
   }
   &__info {
-    padding: 8px;
+    padding: 8px 24px;
   }
   &__rank {
-    margin-top: 8px;
+    font-weight: 700;
+    &--1 {
+      color: #dbb400;
+    }
+    &--2 {
+      color: #9fa0a0;
+    }
+    &--3 {
+      color: #c47022;
+    }
   }
   &__title {
-    margin-top: 8px;
+    margin-top: 12px;
+    color: #039;
+    font-size: 18px;
+  }
+  &__description {
+    margin-top: 12px;
+    font-size: 14px;
   }
   &__categories {
     display: flex;
-    margin-top: 8px;
+    margin-top: 12px;
   }
   &__category {
     margin-right: 8px;
+    font-size: 14px;
   }
 }

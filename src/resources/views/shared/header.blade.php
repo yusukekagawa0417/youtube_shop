@@ -5,10 +5,19 @@
     <nav class="header__nav">
         <ul class="header__list">
             <li class="header__list">
-                <a href="#" class="header__link">link</a>
+                <a href="#" class="header__link">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </li>
             <li class="header__list">
-                <a href="#" class="header__link">link</a>
+                <a href="#" class="header__link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="header__list">
+                <a href="#" class="header__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </li>
         </ul>
     </nav>
