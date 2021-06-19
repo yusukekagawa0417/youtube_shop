@@ -4,4 +4,5 @@
     <meta name="description" content="{{ __('messages.app_description') }}">
     <title>@yield('title', config('app.name'))</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 </head>
