@@ -9,7 +9,7 @@
   width: 33vw;
 }
 .card__info {
-  padding: 8px 24px;
+  padding: 8px 0px 8px 24px;
 }
 .card__rank {
   font-weight: 700;
