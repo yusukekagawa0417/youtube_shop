@@ -1,0 +1,13 @@
+$media-pc: 480px;
+$media-sp: 480px;
+
+@mixin pc {
+  @media only screen and (min-width: $media-pc ) {
+    @content;  
+  }
+}
+@mixin sp {
+  @media only screen and (max-width: $media-sp) {
+    @content;
+  }
+}
