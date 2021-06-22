@@ -1,16 +1,36 @@
 .card {
-  display: flex;
-  padding: 16px 0;
-  border-bottom: solid 1px #CCCCCC;
+  &__list {
+    font-size: 0;
+  }
+  &__item {
+    display: inline-block;
+    width: 100%;
+    @include pc {
+      width: 33%;
+    };
+  }
+  &__contents {
+    display: flex;
+    padding: 16px 0;
+    border-bottom: solid 1px #CCCCCC;
+    @include pc {
+      margin: 0 16px;
+    };
+  }
   &__image {
     height: 50vw;
     width: 33vw;
+    @include pc {
+      height: 17vw;
+      width: 11vw;
+    };
   }
   &__info {
     padding: 8px 0px 8px 24px;
   }
   &__rank {
     font-weight: 700;
+    font-size: 14px;
     &--1 {
       color: #dbb400;
     }
