@@ -4,7 +4,7 @@
     <section>
         <div class="hero">
             <img src="{{ asset('/image/hero-book2.jpg') }}" class="hero__image">
-            <p class="hero__info">YouTubeの動画データを集計し、<br>お薦めされている本をランキングにしました</p>
+            <p class="hero__info">YouTubeの動画データを集計し<br>お薦めされている本をランキングに</p>
         </div>
         <div class="wrapper">
             <div class="card__list">
