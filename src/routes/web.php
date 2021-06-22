@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // TOP
-Route::get('/', function () {
-    return view('product.index');
-});
+Route::get('/', 'ProductController@index')->name('result.index');
 
 // お問い合わせ
 Route::get('/contact', function () {
