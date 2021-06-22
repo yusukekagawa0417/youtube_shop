@@ -62,7 +62,11 @@
 }
 .card__category {
   margin-right: 8px;
-  font-size: 14px;
+  font-size: 12px;
+  padding: 4px;
+  color: white;
+  background: #A5C3CF;
+  border-radius: 2px;
 }
 
 .wrapper {
