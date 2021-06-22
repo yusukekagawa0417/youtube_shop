@@ -41,6 +41,23 @@
   font-size: 14px;
 }
 
+.title {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
 .footer {
   padding: 16px 12px 32px;
   font-size: 12px;
