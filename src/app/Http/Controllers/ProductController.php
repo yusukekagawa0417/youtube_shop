@@ -18,4 +18,15 @@ class ProductController extends Controller
         $products = Product::all();
         return view('product.index', compact('products'));
     }
+
+    /**
+     * 商品詳細
+     * 
+     * @param Product $product
+     * @return Factory|View
+     */
+    public function show (Product $product)
+    {
+        return view('product.show', compact('product'));
+    }
 }
