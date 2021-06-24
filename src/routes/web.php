@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 // TOP
 Route::get('/', 'ProductController@index')->name('result.index');
 
+// 商品
+Route::resource('product', 'ProductController', ['only' => ['show']]);
+
 // お問い合わせ
 Route::get('/contact', function () {
     return view('contact.index');

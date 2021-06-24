@@ -11,6 +11,9 @@
     width: 33%;
   }
 }
+.card__item--large {
+  width: 100%;
+}
 .card__contents {
   display: flex;
   padding: 16px 0;
@@ -20,6 +23,10 @@
   .card__contents {
     margin: 0 16px;
   }
+}
+.card__contents--no-line {
+  padding: 16px 0 0;
+  border-bottom: none;
 }
 .card__image {
   height: 50vw;
@@ -67,6 +74,24 @@
   color: white;
   background: #A5C3CF;
   border-radius: 2px;
+}
+.card__watching-times {
+  display: flex;
+  margin-top: 18px;
+  font-size: 14px;
+}
+.card__watching-times--icon {
+  color: red;
+  margin-right: 8px;
+}
+.card__good-number {
+  display: flex;
+  margin: 8px 0 18px;
+  font-size: 14px;
+}
+.card__good-number--icon {
+  color: #dbb400;
+  margin-right: 8px;
 }
 
 .wrapper {

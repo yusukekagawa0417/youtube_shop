@@ -8,6 +8,9 @@
     @include pc {
       width: 33%;
     };
+    &--large {
+      width: 100%;
+    }
   }
   &__contents {
     display: flex;
@@ -16,6 +19,10 @@
     @include pc {
       margin: 0 16px;
     };
+    &--no-line {
+      padding: 16px 0 0;
+      border-bottom: none;
+    }
   }
   &__image {
     height: 50vw;
@@ -61,5 +68,23 @@
     color: white;
     background: #A5C3CF;
     border-radius: 2px;
+  }
+  &__watching-times {
+    display: flex;
+    margin-top: 18px;
+    font-size: 14px;
+    &--icon {
+      color: red;
+      margin-right: 8px;
+    }
+  }
+  &__good-number {
+    display: flex;
+    margin: 8px 0 18px;
+    font-size: 14px;
+    &--icon {
+      color: #dbb400;
+      margin-right: 8px;
+    }
   }
 }
