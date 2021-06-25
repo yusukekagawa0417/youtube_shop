@@ -14,7 +14,13 @@ class Product extends Model
         'image',
     ];
 
-    public function comments() {
+    public function evaluations()
+    {
         return $this->hasMany('App\Models\Evaluation');
+    }
+
+    public function genres()
+    {
+      return $this->belongsToMany(Genre::class);
     }
 }

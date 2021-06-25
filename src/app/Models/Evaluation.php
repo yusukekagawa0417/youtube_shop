@@ -12,7 +12,8 @@ class Evaluation extends Model
         'watching_times',
     ];
 
-    public function comments() {
-        return $this->belongsTo('App\Models\Product');
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
     }
 }
