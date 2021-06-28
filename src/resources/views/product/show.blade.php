@@ -21,20 +21,24 @@
                                 <div class="card__watching-times--icon">
                                     <i class="fab fa-youtube"></i>
                                 </div>
-                                59,023 回視聴
+                                {{ $product['watching_times'] }} 回視聴
                             </div>
                             <div class="card__good-number">
                                 <div class="card__good-number--icon">
                                     <i class="fas fa-thumbs-up"></i>
                                 </div>
-                                9,062
+                                {{ $product['good_number'] }}
                             </div>
                             <div class="card__categories">
-                                <a class="card__category" href="#">
-                                    本
-                                </a>
-                                <a class="card__category" href="#">
-                                    自己啓発
+                                @foreach ($product->genres as $genre)
+                                    <a class="card__category" href="#">
+                                        {{ $genre['name'] }}
+                                    </a>
+                                @endforeach 
+                            </div>
+                            <div class="btn__amazon">
+                                <a href="{{ $product['url'] }}" class="btn__amazon--link">
+                                    <span>amazon</span>
                                 </a>
                             </div>
                         </div>
