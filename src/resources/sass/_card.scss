@@ -10,6 +10,9 @@
     };
     &--large {
       width: 100%;
+      .card__title {
+        margin-top: 0px;
+      }
     }
   }
   &__contents {
@@ -56,6 +59,7 @@
   &__description {
     margin-top: 12px;
     font-size: 14px;
+    line-height: 20px;
   }
   &__categories {
     display: flex;

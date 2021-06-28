@@ -36,6 +36,9 @@
                                     </a>
                                 @endforeach 
                             </div>
+                            <div class="btn__amazon">
+                                <a href="{{ $product['url'] }}" class="btn__amazon--link">
+                                    <span>amazon</span>
                                 </a>
                             </div>
                         </div>
