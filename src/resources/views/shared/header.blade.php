@@ -23,11 +23,6 @@
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </li>
-            <li class="header__list">
-                <a href="#" class="header__link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
