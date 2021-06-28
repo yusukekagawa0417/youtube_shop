@@ -10,7 +10,8 @@
             <div class="card__item card__item--large">
                 <div class="card__contents card__contents--no-line">
                     <a target="_blank"
-                        href="{{ $product['url'] }}">
+                       rel="noopener noreferrer"
+                       href="{{ $product['url'] }}">
                         <img class="card__image"
                               src="{{ $product['image'] }}">
                         <div class="card__info">
@@ -37,7 +38,10 @@
                                 @endforeach 
                             </div>
                             <div class="btn__amazon">
-                                <a href="{{ $product['url'] }}" class="btn__amazon--link">
+                                <a target="_blank"
+                                   rel="noopener noreferrer"
+                                   href="{{ $product['url'] }}"
+                                   class="btn__amazon--link">
                                     <span>amazon</span>
                                 </a>
                             </div>
