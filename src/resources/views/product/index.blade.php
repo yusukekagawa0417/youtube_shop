@@ -8,12 +8,12 @@
         </div>
         <div class="wrapper">
             <div class="card__list">
-                @foreach ($products as $key => $value)
+                @foreach ($products_with_evaluations as $key => $product)
                     <div class="card__item">
                         <div class="card__contents">
-                            <a href="{{ action('ProductController@show', $value['id'] ) }}">
+                            <a href="{{ action('ProductController@show', $product['id'] ) }}">
                                 <img class="card__image"
-                                     src="{{ $value['image'] }}">
+                                     src="{{ $product['image'] }}">
                                 <div class="card__info">
                                     @if ($key + 1 <= 3)
                                         <div class="card__rank card__rank--{{ $key + 1 }}">
@@ -25,33 +25,32 @@
                                         </div>
                                     @endif
                                     <div class="card__title">
-                                        {{ Str::limit($value['name'], 20, '...') }}
+                                        {{ Str::limit($product['name'], 20, '...') }}
                                     </div>
                                     <div class="card__watching-times">
                                         <div class="card__watching-times--icon">
                                             <i class="fab fa-youtube"></i>
                                         </div>
-                                        59,023 回視聴
+                                        {{ $product['watching_times'] }} 回視聴
                                     </div>
                                     <div class="card__good-number">
                                         <div class="card__good-number--icon">
                                             <i class="fas fa-thumbs-up"></i>
                                         </div>
-                                        9,062
+                                        {{ $product['good_number'] }}
                                     </div>
                                     <div class="card__categories">
-                                        <a class="card__category" href="#">
-                                            本
-                                        </a>
-                                        <a class="card__category" href="#">
-                                            自己啓発
-                                        </a>
+                                        @foreach ($product->genres as $genre)
+                                            <a class="card__category" href="#">
+                                                {{ $genre['name'] }}
+                                            </a>
+                                        @endforeach 
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                @endforeach 
+                @endforeach
             </div>
         </div>
     </section>
