@@ -1,4 +1,52 @@
 @charset "UTF-8";
+.accordion-single {
+  border-bottom: 1px solid #efefef;
+  margin-top: 10px;
+}
+
+.accordion-single-title {
+  border-top: 1px solid #efefef;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+}
+
+.accordion-single-title::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #999;
+  border-right: solid 2px #999;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion-single-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-single-content p {
+  padding: 8px;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.accordion-single-item.is-open .accordion-single-content {
+  max-height: 150px;
+}
+
+.accordion-single-item.is-open .accordion-single-title::after {
+  transform: translateY(-50%) rotate(315deg);
+}
+
 .btn__amazon {
   width: 140px;
   margin-top: 28px;
@@ -171,6 +219,62 @@
   margin: 0 8px;
 }
 
+#hamburger__cover {
+  background: #000;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+#hamburger__menu {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: -300px;
+  background: white;
+  padding: 20px 16px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 100%;
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+.hamburger__menu-open {
+  overflow-y: hidden;
+}
+
+.hamburger__menu-open #hamburger__menu {
+  right: 0;
+  overflow: auto;
+}
+
+.hamburger__menu-open #hamburger__cover {
+  display: block;
+}
+
+#hamburger__show, #hamburger__hide {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+@media only screen and (min-width: 480px) {
+  #hamburger__show, #hamburger__hide {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #hamburger__hide {
+    margin-right: 8px;
+  }
+}
+
 .header {
   height: 40px;
   line-height: 40px;
@@ -192,15 +296,20 @@
     font-size: 28px;
   }
 }
+.header__nav {
+  margin: auto 0;
+}
 .header__list {
   display: flex;
   margin: 0 0 0 14px;
-  font-size: 18px;
+}
+.header__item {
+  margin: 0 0 0 14px;
+  font-size: 20px;
 }
 @media only screen and (min-width: 480px) {
-  .header__list {
-    margin: 0 0 0 16px;
-    font-size: 20px;
+  .header__item {
+    font-size: 24px;
   }
 }
 

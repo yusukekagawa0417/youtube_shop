@@ -16,4 +16,18 @@ class Genre extends Model
     {
       return $this->belongsToMany(Product::class);
     }
+
+    public static function getGenreGroupsByParentId()
+    {
+        $genres = Genre::all();
+        $genre_groups = [];
+        foreach ($genres as $genre) {
+            if ($genre['parent_id'] == $genre['id']) {
+                $genre_groups[$genre['parent_id']]['parent'] = $genre;
+            } else {
+                $genre_groups[$genre['parent_id']]['children'][] = $genre;
+            }
+        }
+        return $genre_groups;
+    }
 }

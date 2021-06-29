@@ -14,13 +14,18 @@
       font-size: 28px;
     };
   }
+  &__nav {
+    margin: auto 0;
+  }
   &__list {
     display: flex;
     margin: 0 0 0 14px;
-    font-size: 18px;
+  }
+  &__item {
+    margin: 0 0 0 14px;
+    font-size: 20px;
     @include pc {
-      margin: 0 0 0 16px;
-      font-size: 20px;
+      font-size: 24px;
     };
   }
 }
