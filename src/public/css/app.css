@@ -243,6 +243,7 @@
   height: 100%;
   transition: 0.2s;
   font-size: 16px;
+  display: none;
 }
 
 .hamburger__menu-open {
@@ -251,7 +252,8 @@
 
 .hamburger__menu-open #hamburger__menu {
   right: 0;
-  overflow: auto;
+  overflow-y: auto;
+  display: block;
 }
 
 .hamburger__menu-open #hamburger__cover {
@@ -316,17 +318,20 @@
 .hero {
   margin-bottom: 16px;
   position: relative;
+  background: black;
+  height: 67vw;
+}
+@media only screen and (min-width: 480px) {
+  .hero {
+    height: 25vw;
+  }
 }
 .hero__image {
-  height: 67vw;
+  height: 100%;
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media only screen and (min-width: 480px) {
-  .hero__image {
-    height: 25vw;
-  }
+  opacity: 0.9;
 }
 .hero__info {
   color: white;
@@ -334,11 +339,11 @@
   bottom: 0px;
   padding: 32px 8px;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media only screen and (min-width: 480px) {
   .hero__info {
-    font-size: 16px;
+    font-size: 18px;
     padding: 32px 28px;
   }
 }
@@ -403,4 +408,8 @@ table {
 a {
   color: black;
   text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
 }

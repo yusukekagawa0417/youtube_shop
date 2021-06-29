@@ -25,7 +25,7 @@
                                         </div>
                                     @endif
                                     <div class="card__title">
-                                        {{ Str::limit($product['name'], 20, '...') }}
+                                        {{ Str::limit($product['name'], 40, '...') }}
                                     </div>
                                     <div class="card__watching-times">
                                         <div class="card__watching-times--icon">
