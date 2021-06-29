@@ -1834,13 +1834,43 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./resources/js/accordion.js":
+/*!***********************************!*\
+  !*** ./resources/js/accordion.js ***!
+  \***********************************/
+/***/ (() => {
+
+var accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');
+accSingleTriggers.forEach(function (trigger) {
+  return trigger.addEventListener('click', toggleAccordion);
+});
+
+function toggleAccordion() {
+  var items = document.querySelectorAll('.js-acc-item');
+  var thisItem = this.parentNode;
+  items.forEach(function (item) {
+    if (thisItem == item) {
+      thisItem.classList.toggle('is-open');
+      return;
+    }
+
+    item.classList.remove('is-open');
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+__webpack_require__(/*! ./accordion */ "./resources/js/accordion.js");
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+__webpack_require__(/*! ./hamburger */ "./resources/js/hamburger.js");
 
 /***/ }),
 
@@ -1872,6 +1902,30 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/hamburger.js":
+/*!***********************************!*\
+  !*** ./resources/js/hamburger.js ***!
+  \***********************************/
+/***/ (() => {
+
+"use strict";
+
+
+(function () {
+  var show = document.getElementById('hamburger__show');
+  var hide = document.getElementById('hamburger__hide');
+  show.addEventListener('click', function () {
+    document.body.className = 'hamburger__menu-open';
+  });
+  hide.addEventListener('click', function () {
+    document.body.className = ''; //アコーディオンを強制終了
+
+    document.getElementsByClassName('is-open')[0].classList.remove('is-open');
+  });
+})();
 
 /***/ }),
 

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', config('app.name'))
+@section('title', "商品詳細|" . $product['name'] . "|" . config('app.name'))
 @section('content')
     <section>
         <div class="hero">

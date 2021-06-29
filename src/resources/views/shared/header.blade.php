@@ -4,24 +4,28 @@
     </h1>
     <nav class="header__nav">
         <ul class="header__list">
-            <li class="header__list">
-                <a class="header__link"
-                   href="https://twitter.com/share?
-                   url=https://youtube-rank.net&
-                   hashtags=YouTubeRank&
-                   text={{ __('messages.app_description') }}" 
-                   rel="nofollow" 
-                   target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-            <li class="header__list">
-                <a href="#" class="header__link">
-                <a href="http://www.facebook.com/share.php?u=https://youtube-rank.net"
-                   rel="nofollow"
-                   target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
+            <li class="header__item">
+                <div id="hamburger__menu">
+                    <i id="hamburger__hide" class="fa fa-times"></i>
+                    <div>カテゴリから探す</div>
+                    <div class="accordion-single js-acc-single">
+                        <?php
+                            $genre_groups = App\Models\Genre::getGenreGroupsByParentId();
+                        ?>
+                        @foreach ($genre_groups as $genre_group)
+                            <div class="accordion-single-item js-acc-item">
+                                <h2 class="accordion-single-title js-acc-single-trigger">{{ $genre_group['parent']['name'] }}</h2>
+                                @foreach ($genre_group['children'] as $child_genre)
+                                    <div class="accordion-single-content">
+                                        <p>{{ $child_genre['name'] }}</p>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div id="hamburger__cover"></div>
+                <i id="hamburger__show" class="fas fa-bars"></i>
             </li>
         </ul>
     </nav>
