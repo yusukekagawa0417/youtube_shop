@@ -1,13 +1,16 @@
 .hero {
   margin-bottom: 16px;
   position: relative;
+  background: black;
+  height: 67vw;
+  @include pc {
+    height: 25vw;
+  };
   &__image {
-    height: 67vw;
+    height: 100%;
     width: 100vw;
     object-fit: cover;
-    @include pc {
-      height: 25vw;
-    };
+    opacity: 0.9;
   }
   &__info {
     color: white;
@@ -15,9 +18,9 @@
     bottom: 0px;
     padding: 32px 8px;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 16px;
     @include pc {
-      font-size: 16px;
+      font-size: 18px;
       padding: 32px 28px;
     };
   }
