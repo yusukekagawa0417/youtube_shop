@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 // TOP
-Route::get('/', 'ProductController@index')->name('result.index');
+Route::get('/', 'ProductController@index')->name('product.index');
 
 // 商品
-Route::resource('product', 'ProductController', ['only' => ['show']]);
+Route::resource('product', 'ProductController', ['only' => ['index', 'show']]);
 
 // お問い合わせ
 Route::get('/contact', function () {

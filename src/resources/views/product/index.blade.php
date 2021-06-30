@@ -7,6 +7,34 @@
             <p class="hero__info">YouTubeの動画データを集計し<br>お薦めされている本をランキング化</p>
         </div>
         <div class="wrapper">
+            <div class="search">
+                <div class="search__info">
+                    絞り込み：{{ $genre_name }}
+                </div>
+                <div class="cp_ipselect cp_sl01">
+                    <form name="order_form">
+                        <select name="order_select" onChange="changeOrder()">
+                            <option value="good_number" @if('good_number' === $order) selected @endif>
+                                いいね順
+                            </option>
+                            <option value="watching_times" @if('watching_times' === $order) selected @endif>
+                                視聴回数順
+                            </option>
+                        </select>
+                    </form>
+                    <script>
+                        function changeOrder()
+                        {
+                            const q = document.order_form.order_select.value;
+                            var url = new URL(location);
+                            url.searchParams.set("order", q);
+                            window.location.href = url;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
             <div class="card__list">
                 @foreach ($products_with_evaluations as $key => $product)
                     <div class="card__item">
@@ -41,7 +69,7 @@
                                     </div>
                                     <div class="card__categories">
                                         @foreach ($product->genres as $genre)
-                                            <a class="card__category" href="#">
+                                            <a class="card__category" href="/product?genre={{ $genre['id'] }}">
                                                 {{ $genre['name'] }}
                                             </a>
                                         @endforeach 

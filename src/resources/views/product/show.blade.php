@@ -32,7 +32,7 @@
                             </div>
                             <div class="card__categories">
                                 @foreach ($product->genres as $genre)
-                                    <a class="card__category" href="#">
+                                    <a class="card__category" href="/product?genre={{ $genre['id'] }}">
                                         {{ $genre['name'] }}
                                     </a>
                                 @endforeach 
