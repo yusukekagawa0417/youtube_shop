@@ -192,8 +192,14 @@
 
 .title {
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 16px;
   font-weight: 700;
+}
+@media only screen and (min-width: 480px) {
+  .title {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 }
 
 .subtitle {
@@ -201,10 +207,22 @@
   margin-top: 30px;
   font-weight: 700;
 }
+@media only screen and (min-width: 480px) {
+  .subtitle {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
 
 .description {
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 16px;
+}
+@media only screen and (min-width: 480px) {
+  .description {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 }
 
 .footer {
