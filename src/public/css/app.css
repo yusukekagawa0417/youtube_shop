@@ -435,10 +435,11 @@ body {
 .search {
   display: flex;
   justify-content: space-between;
+  padding: 0 12px;
 }
 @media only screen and (min-width: 480px) {
   .search {
-    padding: 8px 20px;
+    padding: 8px 36px;
   }
 }
 .search__info {
