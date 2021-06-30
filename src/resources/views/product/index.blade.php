@@ -6,32 +6,34 @@
             <img src="{{ asset('/image/hero-book2.jpg') }}" class="hero__image">
             <p class="hero__info">YouTubeの動画データを集計し<br>お薦めされている本をランキング化</p>
         </div>
-        <div class="wrapper">
-            <div class="search">
-                <div class="search__info">
-                    絞り込み：{{ $genre_name }}
-                </div>
-                <div class="cp_ipselect cp_sl01">
-                    <form name="order_form">
-                        <select name="order_select" onChange="changeOrder()">
-                            <option value="good_number" @if('good_number' === $order) selected @endif>
-                                いいね順
-                            </option>
-                            <option value="watching_times" @if('watching_times' === $order) selected @endif>
-                                視聴回数順
-                            </option>
-                        </select>
-                    </form>
-                    <script>
-                        function changeOrder()
-                        {
-                            const q = document.order_form.order_select.value;
-                            var url = new URL(location);
-                            url.searchParams.set("order", q);
-                            window.location.href = url;
-                        }
-                    </script>
-                </div>
+        <div class="search">
+            <div class="search__info">
+                @php
+                    if (!empty($genre_name)) {
+                        echo "絞り込み：" . $genre_name;
+                    }
+                @endphp
+            </div>
+            <div class="cp_ipselect cp_sl01">
+                <form name="order_form">
+                    <select name="order_select" onChange="changeOrder()">
+                        <option value="good_number" @if('good_number' === $order) selected @endif>
+                            いいね順
+                        </option>
+                        <option value="watching_times" @if('watching_times' === $order) selected @endif>
+                            視聴回数順
+                        </option>
+                    </select>
+                </form>
+                <script>
+                    function changeOrder()
+                    {
+                        const q = document.order_form.order_select.value;
+                        var url = new URL(location);
+                        url.searchParams.set("order", q);
+                        window.location.href = url;
+                    }
+                </script>
             </div>
         </div>
         <div class="wrapper">
