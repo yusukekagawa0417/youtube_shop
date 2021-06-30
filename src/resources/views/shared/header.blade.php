@@ -14,10 +14,16 @@
                         ?>
                         @foreach ($genre_groups as $genre_group)
                             <div class="accordion-single-item js-acc-item">
-                                <h2 class="accordion-single-title js-acc-single-trigger">{{ $genre_group['parent']['name'] }}</h2>
+                                <h2 class="accordion-single-title js-acc-single-trigger">
+                                    {{ $genre_group['parent']['name'] }}
+                                </h2>
                                 @foreach ($genre_group['children'] as $child_genre)
                                     <div class="accordion-single-content">
-                                        <p>{{ $child_genre['name'] }}</p>
+                                        <p>
+                                            <a href="/product?genre={{ $child_genre['id'] }}">
+                                                {{ $child_genre['name'] }}
+                                            </a>
+                                        </p>
                                     </div>
                                 @endforeach
                             </div>
