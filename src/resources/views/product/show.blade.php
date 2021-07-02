@@ -2,10 +2,7 @@
 @section('title', "商品詳細|" . $product['name'] . "|" . config('app.name'))
 @section('content')
     <section>
-        <div class="hero">
-            <img src="{{ asset('/image/hero-book2.jpg') }}" class="hero__image">
-            <p class="hero__info">YouTubeの動画データを集計し<br>お薦めされている本をランキング化</p>
-        </div>
+        @include('shared.hero')
         <div class="wrapper">
             <div class="card__item card__item--large">
                 <div class="card__contents card__contents--no-line">
