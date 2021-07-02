@@ -17,9 +17,9 @@ class EvaluationSeeder extends Seeder
         DB::table('evaluations')->insert([
             [
                 'product_id' => '1',
-                'good_number' => '7829',
+                'good_number' => '7929',
                 'bad_number' => '35',
-                'watching_times' => '100124',
+                'watching_times' => '110124',
             ],
             [
                 'product_id' => '1',
@@ -29,9 +29,9 @@ class EvaluationSeeder extends Seeder
             ],
             [
                 'product_id' => '2',
-                'good_number' => '133',
+                'good_number' => '233',
                 'bad_number' => '12',
-                'watching_times' => '15330',
+                'watching_times' => '15830',
             ],
             [
                 'product_id' => '3',
@@ -41,9 +41,9 @@ class EvaluationSeeder extends Seeder
             ],
             [
                 'product_id' => '4',
-                'good_number' => '1409',
+                'good_number' => '1800',
                 'bad_number' => '12',
-                'watching_times' => '583892',
+                'watching_times' => '594892',
             ],
             [
                 'product_id' => '5',
@@ -65,27 +65,33 @@ class EvaluationSeeder extends Seeder
             ],
             [
                 'product_id' => '8',
-                'good_number' => '97538',
+                'good_number' => '97738',
                 'bad_number' => '12',
-                'watching_times' => '500010',
+                'watching_times' => '503010',
             ],
             [
                 'product_id' => '9',
-                'good_number' => '937',
+                'good_number' => '997',
                 'bad_number' => '12',
-                'watching_times' => '11123',
+                'watching_times' => '17123',
             ],
             [
                 'product_id' => '10',
-                'good_number' => '158',
+                'good_number' => '159',
                 'bad_number' => '12',
-                'watching_times' => '4802',
+                'watching_times' => '4812',
             ],
             [
                 'product_id' => '10',
-                'good_number' => '482',
+                'good_number' => '489',
                 'bad_number' => '12',
-                'watching_times' => '9800',
+                'watching_times' => '9900',
+            ],
+            [
+                'product_id' => '11',
+                'good_number' => '801',
+                'bad_number' => '132',
+                'watching_times' => '12840',
             ],
         ]);
     }
