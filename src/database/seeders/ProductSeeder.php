@@ -518,6 +518,24 @@ class ProductSeeder extends Seeder
                 'url' => 'https://www.amazon.co.jp/gp/product/4478108498/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4478108498&linkCode=as2&tag=kagaway-22&linkId=c7c388a603d90fc7d5360500bc3b7235',
                 'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4478108498&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
             ],
+            [
+                'asin' => '4864100829',
+                'name' => '夢をかなえるゾウ文庫版',
+                'description' => 'この本は自己啓発本の定番です。ストーリー性になっており読みやすく、かつ、役にも立つという素晴らしい本だと思います。以下概要です。
+                ≪174万部のベストセラー待望の文庫化！≫
+                「お前なぁ、このままやと2000%成功でけへんで」
+                ダメダメなサラリーマンの前に突然現れた関西弁を喋るゾウの姿をした神様“ガネーシャ”。
+                成功するために教えられたことは「靴をみがく」とか「コンビニで募金する」とか地味なものばかりで…。
+                夢をなくした“僕”と史上最悪の“師匠”が繰り広げる、「笑って」「泣けて」「ためになる」実用エンタテインメント小説。
+                内容（「BOOK」データベースより）
+                ダメダメな僕のもとに突然現れた、ゾウの姿をしてなぜか関西弁で話す、とてつもなくうさん臭い神様“ガネーシャ”。聞けば、ナポレオン、孔子、ニュートン、最近ではビル・ゲイツまで、歴史上のキーパーソンは自分が導いたという…。しかし、その教えは「靴をみがく」とか「コンビニで募金する」とか地味なものばかり。こんなんで僕は成功できるの!?TVドラマ化、アニメ化、舞台化された、ベスト&ロングセラー。過去の偉人の具体例から導き出される、誰にでもできる超実践的な成功習慣を小説に織り込んだ、笑って、泣けて、タメになる、まったく新しいエンターテインメント小説。
+                著者略歴 (「BOOK著者紹介情報」より)
+                水野/敬也
+                愛知県生まれ。慶応義塾大学経済学部卒業。DVD作品『温厚な上司の怒らせ方』(ビクターエンタテインメント)の企画構成・脚本や漫画『地球くん』の企画・原案を手がける(本データはこの書籍が刊行された当時に掲載されていたものです)
+                ',
+                'url' => 'https://www.amazon.co.jp/gp/product/4864100829/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4864100829&linkCode=as2&tag=kagaway-22&linkId=e58f23c77987445c4f019dca74b94765',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4864100829&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+            ],
         ]);
     }
 }
