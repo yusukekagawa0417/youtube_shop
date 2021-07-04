@@ -93,6 +93,12 @@ class EvaluationSeeder extends Seeder
                 'bad_number' => '132',
                 'watching_times' => '12840',
             ],
+            [
+                'product_id' => '12',
+                'good_number' => '9957',
+                'bad_number' => '712',
+                'watching_times' => '73957',
+            ],
         ]);
     }
 }
