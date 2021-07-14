@@ -50,8 +50,8 @@ class ProductSeeder extends Seeder
                 著者略歴 (「BOOK著者紹介情報」より)
                 岡本/太郎
                 芸術家。1911年生まれ。29年に渡仏し、30年代のパリで抽象芸術やシュルレアリスム運動に参画。パリ大学でマルセル・モースに民族学を学び、ジョルジュ・バタイユらと活動をともにした。40年帰国。戦後日本で前衛芸術運動を展開し、問題作を次々と社会に送り出す。51年に縄文土器と遭遇し、翌年「縄文土器論」を発表。70年大阪万博で『太陽の塔』を制作し、国民的存在になる。96年没(本データはこの書籍が刊行された当時に掲載されていたものです) --このテキストは、paperback_bunko版に関連付けられています。',
-                'url' => 'https://www.amazon.co.jp/gp/product/B079VNN2FX/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B079VNN2FX&linkCode=as2&tag=kagaway-22&linkId=6a4af7dbd4d106cba81e7d21b0152ebf',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B079VNN2FX&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/B079VNN2FX/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B079VNN2FX&linkCode=as2&tag=kagaway06-22&linkId=6a4af7dbd4d106cba81e7d21b0152ebf',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B079VNN2FX&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4862760856',
@@ -95,8 +95,8 @@ class ProductSeeder extends Seeder
                 著者略歴 (「BOOK著者紹介情報」より)
                 安宅/和人
                 1968年、富山県生まれ。東京大学大学院生物化学専攻にて修士号取得後、マッキンゼー・アンド・カンパニーに入社。4年半の勤務後、イェール大学・脳神経科学プログラムに入学。3年9カ月で学位取得(Ph.D.)。マッキンゼー復帰に伴い帰国。マーケティング研究グループのアジア太平洋地域における中心メンバーの1人として、飲料、小売り・ハイテクなど幅広い分野におけるブランド立て直し、商品・事業開発に関わる。また、東京事務所における新人教育のメンバーとして「問題解決」「分析」「チャートライティング」などのトレーニングを担当(本データはこの書籍が刊行された当時に掲載されていたものです) --このテキストは、tankobon_softcover版に関連付けられています。',
-                'url' => 'https://www.amazon.co.jp/gp/product/4862760856/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4862760856&linkCode=as2&tag=kagaway-22&linkId=eb6ed98651de96827ad85eff43dd0d91',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4862760856&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4862760856/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4862760856&linkCode=as2&tag=kagaway06-22&linkId=eb6ed98651de96827ad85eff43dd0d91',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4862760856&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4910063137',
@@ -154,8 +154,8 @@ class ProductSeeder extends Seeder
                 「あと10年で、あらゆる産業と社会は根底から変わる——。今日の最先端テクノロジーがこれから加速し、かつ、互いに「融合」するからだ。本書はこの新しい未来を全方位的にマッピングした、世界初の本である。起業家、CEO、リーダーたちはもちろん、ぼくらを待ちうける大変革を理解したいすべての人に、本書を推薦する」
                 ——レイ・カーツワイル(Google AI開発ディレクター、『シンギュラリティは近い』著者)
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/4910063137/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4910063137&linkCode=as2&tag=kagaway-22&linkId=ffb6ca280efc1bfa10e1984539032fa0',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4910063137&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4910063137/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4910063137&linkCode=as2&tag=kagaway06-22&linkId=ffb6ca280efc1bfa10e1984539032fa0',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4910063137&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => 'B00KFB5DJC',
@@ -198,8 +198,8 @@ class ProductSeeder extends Seeder
                 --このテキストは、hardcover版に関連付けられています。
                 内容（「BOOK」データベースより）
                 国内200万、世界3,000万の人生のバイブル。内容はそのままに、いつでも、どこでも、読めるよう、小さく、軽くなった特装版登場! --このテキストは、tankobon_hardcover版に関連付けられています。',
-                'url' => 'https://www.amazon.co.jp/gp/product/B00KFB5DJC/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00KFB5DJC&linkCode=as2&tag=kagaway-22&linkId=6eed84f2817f4665431328d86979d881',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B00KFB5DJC&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/B00KFB5DJC/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00KFB5DJC&linkCode=as2&tag=kagaway06-22&linkId=6eed84f2817f4665431328d86979d881',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B00KFB5DJC&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => 'B01AHEL75K',
@@ -251,8 +251,8 @@ class ProductSeeder extends Seeder
                 赤羽/雄二
                 東京大学工学部を1978年に卒業後、小松製作所で建設現場用ダンプトラックの設計・開発に携わる。1983年よりスタンフォード大学大学院に留学し、機械工学修士、修士上級課程を修了。1986年、マッキンゼーに入社。経営戦略の立案と実行支援、新組織の設計と導入、マーケティング、新事業立ち上げなど多数のプロジェクトをリード。1990年にはマッキンゼーソウルオフィスをゼロから立ち上げ、120名強に成長させる原動力となるとともに、韓国企業、特にLGグループの世界的な躍進を支えた(本データはこの書籍が刊行された当時に掲載されていたものです) --このテキストは、tankobon_softcover版に関連付けられています。
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/B00HQ6O7BO/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00HQ6O7BO&linkCode=as2&tag=kagaway-22&linkId=772119d8cf2295dd66dc00e19071348a',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B00HQ6O7BO&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/B00HQ6O7BO/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00HQ6O7BO&linkCode=as2&tag=kagaway06-22&linkId=772119d8cf2295dd66dc00e19071348a',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B00HQ6O7BO&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '442210098X',
@@ -276,8 +276,8 @@ class ProductSeeder extends Seeder
                 人間関係の先覚者として名をなす。
                 不朽の名著『人を動かす』『道は開ける』など多数の著作がある。
                 --このテキストは、paperback_bunko版に関連付けられています。',
-                'url' => 'https://www.amazon.co.jp/gp/product/442210098X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=442210098X&linkCode=as2&tag=kagaway-22&linkId=c527df763c9df84326a91685477c7ada',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=442210098X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/442210098X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=442210098X&linkCode=as2&tag=kagaway06-22&linkId=c527df763c9df84326a91685477c7ada',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=442210098X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4532321433',
@@ -317,8 +317,8 @@ class ProductSeeder extends Seeder
                 古屋博子(ふるや・ひろこ)
                 ギャラップ認定ストレングスコーチ。ギャラップのストレングス・コーチング・コースやハイパフォーマンス・マネジメント・コースのリーダーおよび講師も務める。慶應義塾大学大学院で修士号(政治学)を、東京大学大学院で博士号(学術)を取得。2児の母。
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/4532321433/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4532321433&linkCode=as2&tag=kagaway-22&linkId=8a894babaab2fc5246cfbd784f3d98ff',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4532321433&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4532321433/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4532321433&linkCode=as2&tag=kagaway06-22&linkId=8a894babaab2fc5246cfbd784f3d98ff',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4532321433&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4822289605',
@@ -394,8 +394,8 @@ class ProductSeeder extends Seeder
                 関/美和
                 翻訳家。杏林大学外国語学部准教授。慶応義塾大学文学部・法学部卒業。電通、スミス・バーニー勤務の後、ハーバード・ビジネス・スクールでMBA取得。モルガン・スタンレー投資銀行を経てクレイ・フィンレイ投資顧問東京支店長を務める。また、アジア女子大学(バングラデシュ)支援財団の理事も務めている。(本データはこの書籍が刊行された当時に掲載されていたものです)
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/4822289605/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4822289605&linkCode=as2&tag=kagaway-22&linkId=0c941a8e2cfea88455ca27d86b35620e',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4822289605&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4822289605/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4822289605&linkCode=as2&tag=kagaway06-22&linkId=0c941a8e2cfea88455ca27d86b35620e',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4822289605&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4799108425',
@@ -459,8 +459,8 @@ class ProductSeeder extends Seeder
                 内容（「BOOK」データベースより）
                 もう会話で悩まない。疲れない。オロオロしない。口下手でも、あがり症でも、大丈夫!楽しく会話できる「とっておきの秘訣」が満載!
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/4799108425/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4799108425&linkCode=as2&tag=kagaway-22&linkId=b9f2e4b6e02ff3a093122978d96c48fa',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4799108425&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4799108425/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4799108425&linkCode=as2&tag=kagaway06-22&linkId=b9f2e4b6e02ff3a093122978d96c48fa',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4799108425&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4478108498',
@@ -515,8 +515,8 @@ class ProductSeeder extends Seeder
                 内容（「BOOK」データベースより）
                 ラクを極めた管理人がマジメに語る、「生い立ち」「起業」「ビジネス」「これから」の話。「頭のいい生き方」を教えよう。
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/4478108498/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4478108498&linkCode=as2&tag=kagaway-22&linkId=c7c388a603d90fc7d5360500bc3b7235',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4478108498&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4478108498/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4478108498&linkCode=as2&tag=kagaway06-22&linkId=c7c388a603d90fc7d5360500bc3b7235',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4478108498&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4864100829',
@@ -533,8 +533,8 @@ class ProductSeeder extends Seeder
                 水野/敬也
                 愛知県生まれ。慶応義塾大学経済学部卒業。DVD作品『温厚な上司の怒らせ方』(ビクターエンタテインメント)の企画構成・脚本や漫画『地球くん』の企画・原案を手がける(本データはこの書籍が刊行された当時に掲載されていたものです)
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/4864100829/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4864100829&linkCode=as2&tag=kagaway-22&linkId=e58f23c77987445c4f019dca74b94765',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4864100829&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4864100829/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4864100829&linkCode=as2&tag=kagaway06-22&linkId=e58f23c77987445c4f019dca74b94765',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4864100829&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
             [
                 'asin' => '4023318787',
@@ -597,8 +597,8 @@ class ProductSeeder extends Seeder
                 両@リベ大学長
                 両@リベラルアーツ大学学長。「日本一自由な会社」の社長。高校在学中に起業し、ITビジネスと投資で10代にして年間1億円以上を稼いだが、数々の失敗も経験し、優秀な経営者仲間やモルディブの大富豪から「本当の社会の仕組み」や「人生を豊かに生きる知恵」を学ぶ。以降本業で20年以上稼ぎ続けながら、「自由な人を増やす」という夢を叶えるために家族や友人向けに発信を始めた通称「リベ大」は、節約・税金・投資・副業のリアルガチなお金の教養を軽妙な関西弁でわかりやすく解説する内容で、SNSを中心に熱狂的な支持を得る(本データはこの書籍が刊行された当時に掲載されていたものです)
                 ',
-                'url' => 'https://www.amazon.co.jp/gp/product/4023318787/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4023318787&linkCode=as2&tag=kagaway-22&linkId=56d542381f2c7f4c506af3aa3f9784ba',
-                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4023318787&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway-22',
+                'url' => 'https://www.amazon.co.jp/gp/product/4023318787/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4023318787&linkCode=as2&tag=kagaway06-22&linkId=56d542381f2c7f4c506af3aa3f9784ba',
+                'image' => '//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4023318787&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kagaway06-22',
             ],
         ]);
     }
