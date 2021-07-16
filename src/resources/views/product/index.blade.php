@@ -15,10 +15,10 @@
                 <form name="order_form">
                     <select name="order_select" onChange="changeOrder()">
                         <option value="good_number" @if('good_number' === $order) selected @endif>
-                            いいね順
+                            評価の高い順
                         </option>
                         <option value="watching_times" @if('watching_times' === $order) selected @endif>
-                            視聴回数順
+                            視聴回数の多い順
                         </option>
                     </select>
                 </form>
@@ -38,43 +38,50 @@
                 @foreach ($products_with_evaluations as $key => $product)
                     <div class="card__item">
                         <div class="card__contents">
-                            <a href="{{ action('ProductController@show', $product['id'] ) }}">
+                            <a target="_blank"
+                               rel="noopener noreferrer"
+                               href="{{ $product['url'] }}">
                                 <img class="card__image"
                                      src="{{ $product['image'] }}">
-                                <div class="card__info">
-                                    @if ($key + 1 <= 3)
-                                        <div class="card__rank card__rank--{{ $key + 1 }}">
-                                            <i class="fas fa-crown"></i>&nbsp;{{ $key + 1 }}
-                                        </div>
-                                    @else
-                                        <div class="card__rank">
-                                            {{ $key + 1 }}
-                                        </div>
-                                    @endif
+                            </a>
+                            <div class="card__info">
+                                @if ($key + 1 <= 3)
+                                    <div class="card__rank card__rank--{{ $key + 1 }}">
+                                        <i class="fas fa-crown"></i>&nbsp;{{ $key + 1 }}
+                                    </div>
+                                @else
+                                    <div class="card__rank">
+                                        {{ $key + 1 }}
+                                    </div>
+                                @endif
+                                
+                                <a target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="{{ $product['url'] }}">
                                     <div class="card__title">
                                         {{ Str::limit($product['name'], 40, '...') }}
                                     </div>
-                                    <div class="card__watching-times">
-                                        <div class="card__watching-times--icon">
-                                            <i class="fab fa-youtube"></i>
-                                        </div>
-                                        {{ $product['watching_times'] }} 回視聴
+                                </a>
+                                <div class="card__watching-times">
+                                    <div class="card__watching-times--icon">
+                                        <i class="fab fa-youtube"></i>
                                     </div>
-                                    <div class="card__good-number">
-                                        <div class="card__good-number--icon">
-                                            <i class="fas fa-thumbs-up"></i>
-                                        </div>
-                                        {{ $product['good_number'] }}
-                                    </div>
-                                    <div class="card__categories">
-                                        @foreach ($product->genres as $genre)
-                                            <a class="card__category" href="/product?genre={{ $genre['id'] }}">
-                                                {{ $genre['name'] }}
-                                            </a>
-                                        @endforeach 
-                                    </div>
+                                    {{ $product['watching_times'] }} 回視聴
                                 </div>
-                            </a>
+                                <div class="card__good-number">
+                                    <div class="card__good-number--icon">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                    {{ $product['good_number'] }}
+                                </div>
+                                <div class="card__categories">
+                                    @foreach ($product->genres as $genre)
+                                        <a class="card__category" href="/product?genre={{ $genre['id'] }}">
+                                            {{ $genre['name'] }}
+                                        </a>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
                 @endforeach
