@@ -45,6 +45,9 @@ class YouTubeDataBatch extends Command
      */
     public function handle()
     {
+        // バッチを動かす度に同一データの重複保存が発生するため、最初にここで削除しておく
+        Evaluation::query()->delete();
+
         // YouTube動画情報取得
         $youtube = new YouTube();
         $video_ids = $youtube->getVideoIdsByChannelIds(config('const.channel_ids'));
@@ -80,7 +83,6 @@ class YouTubeDataBatch extends Command
                                 }
 
                                 // 評価を保存
-                                Evaluation::query()->delete();
                                 $product->evaluations()->create([
                                     'good_number' => $video_detail_info['statistics']['likeCount'],
                                     'bad_number' => $video_detail_info['statistics']['dislikeCount'],
