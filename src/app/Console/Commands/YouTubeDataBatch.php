@@ -3,7 +3,14 @@
 namespace App\Console\Commands;
 
 use App\Api\YouTube;
+use App\Models\Evaluation;
+use App\Models\Genre;
+use App\Models\Product;
+use Carbon\Carbon;
+use Exception;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
+use Log;
 
 class YouTubeDataBatch extends Command
 {
@@ -41,25 +48,76 @@ class YouTubeDataBatch extends Command
         $youtube = new YouTube();
         $video_ids = $youtube->getVideoIdsByChannelIds(config('const.channel_ids'));
         $video_detail_infos = $youtube->getVideoDetailInfosByVideoIds($video_ids);
-        $amazon_urls = [];
+
         foreach ($video_detail_infos as $video_detail_info) {
+            // 概要欄取得
             $descriptions = explode("\n", $video_detail_info['snippet']['description']);
             foreach ($descriptions as $description) {
+                // 概要欄に含まれるamazonアフィリのurlにアクセス
                 if (preg_match ('/^https?:\/\/amzn.to\//', $description)) {
-                    $amazon_urls[] = $description;
-                }
-            }
-        }
+                    $headers = get_headers($description);
+                    foreach ($headers as $header) {
+                        // amazonの商品詳細ページurlからASINを取得
+                        preg_match('/creativeASIN=(\w+)/', $header, $match);
+                        if (!empty($match)) {
+                            // TODO: ASINからpaapiで商品情報（ジャンル含む）を取得
+                            // $item_info = $this->executeAwsV4($match[1]);
 
-        $asins = [];
-        foreach ($amazon_urls as $amazon_url) {
-            $headers = get_headers($amazon_url);
-            foreach ($headers as $header) {
-                preg_match('/creativeASIN=(\w+)/', $header, $match);
-                if (!empty($match)) {
-                    $asins[] = $match[1];
+                            DB::beginTransaction();
+                            try {
+                                // TODO: 商品情報を保存（paapi使えるようになるまでは仮データを保存）
+                                $product = Product::where('asin', $match[1])->first();
+                                if (empty($product)) {
+                                    $product_new = Product::create([
+                                        'asin' => $match[1],
+                                        'name' => 'Unregistered',
+                                        'description' => 'Unregistered',
+                                        'url' => 'Unregistered',
+                                        'image' => 'Unregistered',
+                                    ]);
+                                    $product = $product_new;
+                                }
+
+                                // 評価を保存
+                                $product->evaluations()->create([
+                                    'good_number' => $video_detail_info['statistics']['likeCount'],
+                                    'bad_number' => $video_detail_info['statistics']['dislikeCount'],
+                                    'watching_times' => $video_detail_info['statistics']['viewCount'],
+                                ]);
+
+                                // TODO: ジャンルを保存（paapi使えるようになるまでは仮データを保存）
+                                // TODO: 多分複数ジャンル存在するためおいおいループで処理（多対多処理の箇所まで含めて）
+                                // $genre = Genre::where('name', '本')->first();
+                                // if (empty($genre)) {
+                                //     $genre_new = Genre::create([
+                                //         'name' => '本',
+                                //         'parent_id' => '1',
+                                //     ]);
+                                //     $genre = $genre_new;
+                                // }
+                                // if (!empty($product_new)) {
+                                //     $product->genres()->attach(
+                                //         ['genre_id' => $genre->id],
+                                //         ['product_id' => $product->id],
+                                //         ['created_at' => Carbon::now()],
+                                //         ['updated_at' => Carbon::now()]
+                                //     );
+                                // }
+                            } catch(Exception $e) {
+                                DB::rollback();
+                                Log::error($e);
+                                return;
+                            }
+                            DB::commit();
+                        }
+                    }
                 }
             }
         }
+    }
+
+    public function executeAwsV4($asin)
+    {
+        // TODO: paapiを叩くコードを作成（scratchpadで生成したものを貼り付け）
     }
 }

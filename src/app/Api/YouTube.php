@@ -47,6 +47,7 @@ class YouTube
         foreach ($video_ids as $video_id) {
             $part = [
                 'snippet',
+                'statistics',
             ];
             $params = [
                 'id' => $video_id,
