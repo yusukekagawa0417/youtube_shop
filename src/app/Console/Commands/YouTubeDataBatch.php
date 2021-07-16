@@ -45,6 +45,12 @@ class YouTubeDataBatch extends Command
      */
     public function handle()
     {
+        // DBをリセット
+        Evaluation::query()->delete();
+        Genre::query()->delete();
+        Product::query()->delete();
+
+        // YouTube動画情報取得
         $youtube = new YouTube();
         $video_ids = $youtube->getVideoIdsByChannelIds(config('const.channel_ids'));
         $video_detail_infos = $youtube->getVideoDetailInfosByVideoIds($video_ids);
