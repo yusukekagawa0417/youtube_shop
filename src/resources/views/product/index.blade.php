@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', "商品一覧|" . config('app.name'))
+@section('title', config('app.name'))
 @section('content')
     <section>
         @include('shared.hero')
@@ -68,7 +68,7 @@
                                 </a>
                                 <div class="card__watching-times">
                                     <div class="card__watching-times--icon">
-                                        <i class="fab fa-youtube"></i>
+                                        <i class="fas fa-play-circle"></i>
                                     </div>
                                     {{ number_format($product['watching_times']) }} 回視聴
                                 </div>
