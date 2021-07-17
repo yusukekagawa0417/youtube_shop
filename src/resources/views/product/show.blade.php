@@ -10,7 +10,8 @@
                        rel="noopener noreferrer"
                        href="{{ $product['url'] }}">
                         <img class="card__image"
-                              src="{{ $product['image'] }}">
+                              src="{{ $product['image'] }}"
+                              alt="{{ $product['name'] }}">
                         <div class="card__info">
                             <div class="card__title">
                                 {{ $product['name'] }}

@@ -42,7 +42,8 @@
                                rel="noopener noreferrer"
                                href="{{ $product['url'] }}">
                                 <img class="card__image"
-                                     src="{{ $product['image'] }}">
+                                     src="{{ $product['image'] }}"
+                                     alt="{{ $product['name'] }}">
                             </a>
                             <div class="card__info">
                                 @if ($key + 1 <= 3)
