@@ -14,11 +14,14 @@
             <div class="cp_ipselect cp_sl01">
                 <form name="order_form">
                     <select name="order_select" onChange="changeOrder()">
-                        <option value="good_number" @if('good_number' === $order) selected @endif>
-                            評価の高い順
+                        <option value="good_number" @if($order === 'good_number') selected @endif>
+                            いいね数の多い順
                         </option>
-                        <option value="watching_times" @if('watching_times' === $order) selected @endif>
+                        <option value="watching_times" @if($order === 'watching_times') selected @endif>
                             視聴回数の多い順
+                        </option>
+                        <option value="good_number_rate" @if($order === 'good_number_rate') selected @endif>
+                            いいね率の高い順（いいね数 / 視聴回数）
                         </option>
                     </select>
                 </form>
