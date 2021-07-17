@@ -175,6 +175,7 @@
 .card__watching-times--icon {
   color: red;
   margin-right: 8px;
+  font-size: 12px;
 }
 .card__good-number {
   display: flex;
@@ -184,6 +185,7 @@
 .card__good-number--icon {
   color: #dbb400;
   margin-right: 8px;
+  font-size: 12px;
 }
 
 .wrapper {
@@ -349,7 +351,7 @@
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.7;
+  opacity: 0.65;
 }
 .hero__info {
   color: white;
@@ -358,6 +360,7 @@
   padding: 32px 8px;
   line-height: 20px;
   font-size: 16px;
+  font-weight: 500;
 }
 @media only screen and (min-width: 480px) {
   .hero__info {
