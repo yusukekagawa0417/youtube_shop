@@ -14,11 +14,14 @@
             <div class="cp_ipselect cp_sl01">
                 <form name="order_form">
                     <select name="order_select" onChange="changeOrder()">
-                        <option value="good_number" @if('good_number' === $order) selected @endif>
-                            評価の高い順
+                        <option value="good_number" @if($order === 'good_number') selected @endif>
+                            いいね数の多い順
                         </option>
-                        <option value="watching_times" @if('watching_times' === $order) selected @endif>
+                        <option value="watching_times" @if($order === 'watching_times') selected @endif>
                             視聴回数の多い順
+                        </option>
+                        <option value="good_number_rate" @if($order === 'good_number_rate') selected @endif>
+                            いいね率の高い順（いいね数 / 視聴回数）
                         </option>
                     </select>
                 </form>
@@ -36,13 +39,15 @@
         <div class="wrapper">
             <div class="card__list">
                 @foreach ($products_with_evaluations as $key => $product)
+                    @if ($product['name'] !== 'Unregistered')
                     <div class="card__item">
                         <div class="card__contents">
                             <a target="_blank"
                                rel="noopener noreferrer"
                                href="{{ $product['url'] }}">
                                 <img class="card__image"
-                                     src="{{ $product['image'] }}">
+                                     src="{{ $product['image'] }}"
+                                     alt="{{ $product['name'] }}">
                             </a>
                             <div class="card__info">
                                 @if ($key + 1 <= 3)
@@ -66,13 +71,13 @@
                                     <div class="card__watching-times--icon">
                                         <i class="fab fa-youtube"></i>
                                     </div>
-                                    {{ $product['watching_times'] }} 回視聴
+                                    {{ number_format($product['watching_times']) }} 回視聴
                                 </div>
                                 <div class="card__good-number">
                                     <div class="card__good-number--icon">
                                         <i class="fas fa-thumbs-up"></i>
                                     </div>
-                                    {{ $product['good_number'] }}
+                                    {{ number_format($product['good_number']) }}
                                 </div>
                                 <div class="card__categories">
                                     @foreach ($product->genres as $genre)
@@ -84,6 +89,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                 @endforeach
             </div>
         </div>

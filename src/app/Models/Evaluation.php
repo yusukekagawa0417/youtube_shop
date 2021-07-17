@@ -10,6 +10,7 @@ class Evaluation extends Model
         'good_number',
         'bad_number',
         'watching_times',
+        'channel',
     ];
 
     public function product()

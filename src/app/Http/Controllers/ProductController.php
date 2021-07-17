@@ -37,8 +37,11 @@ class ProductController extends Controller
         // 商品データに評価データを結合
         $products_with_evaluations = [];
         foreach ($products as $product) {
-            $product->watching_times = ($product->evaluations()->sum('watching_times'));
-            $product->good_number = ($product->evaluations()->sum('good_number'));
+            $watching_times = $product->evaluations()->sum('watching_times');
+            $good_number = $product->evaluations()->sum('good_number');
+            $product->watching_times = ((int)$watching_times);
+            $product->good_number = ((int)$good_number);
+            $product->good_number_rate = ((int)$good_number / (int)$watching_times);
             $products_with_evaluations[] = $product;
         }
 
@@ -49,9 +52,9 @@ class ProductController extends Controller
             $order = 'good_number';
         }
         foreach ($products_with_evaluations as $key => $value) {
-            $good_number[$key] = $value[$order];
+            $array[$key] = $value[$order];
         }
-        array_multisort($good_number, SORT_DESC, $products_with_evaluations);
+        array_multisort($array, SORT_DESC, $products_with_evaluations);
 
         return view('product.index', compact('products_with_evaluations', 'order', 'genre_name'));
     }

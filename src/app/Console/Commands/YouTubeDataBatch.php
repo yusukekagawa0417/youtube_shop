@@ -47,11 +47,6 @@ class YouTubeDataBatch extends Command
     {
         DB::beginTransaction();
         try {
-            // DBリセット
-            Evaluation::query()->delete();
-            Genre::query()->delete();
-            Product::query()->delete();
-
             // YouTube動画情報取得
             $youtube = new YouTube();
             $video_ids = $youtube->getVideoIdsByChannelIds(config('const.channel_ids'));
@@ -85,11 +80,23 @@ class YouTubeDataBatch extends Command
                                     }
 
                                     // 評価を保存
-                                    $product->evaluations()->create([
+                                    // 同じチャンネル、かつ、同じ商品における評価が既に存在する場合は上書き保存（理由は下記1or2）
+                                    // 1. 経時変化する評価データの更新
+                                    // 2. 一つのチャンネルで複数回紹介されたものの過大評価防止
+                                    $evaluation = $product->evaluations()
+                                                          ->where('channel', $video_detail_info['snippet']["channelId"])
+                                                          ->first();
+                                    $evaluation_data = [
                                         'good_number' => $video_detail_info['statistics']['likeCount'],
                                         'bad_number' => $video_detail_info['statistics']['dislikeCount'],
                                         'watching_times' => $video_detail_info['statistics']['viewCount'],
-                                    ]);
+                                        'channel' => $video_detail_info['snippet']["channelId"],
+                                    ];
+                                    if (empty($evaluation)) {
+                                        $product->evaluations()->create($evaluation_data);
+                                    } else {
+                                        $evaluation->update($evaluation_data);
+                                    }
 
                                     // TODO: ジャンルを保存（paapi使えるようになるまでは仮データを保存）
                                     // TODO: 多分複数ジャンル存在するためおいおいループで処理（多対多処理の箇所まで含めて）
