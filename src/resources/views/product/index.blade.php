@@ -39,7 +39,6 @@
         <div class="wrapper">
             <div class="card__list">
                 @foreach ($products_with_evaluations as $key => $product)
-                    @if ($product['name'] !== 'Unregistered')
                     <div class="card__item">
                         <div class="card__contents">
                             <a target="_blank"
@@ -89,7 +88,6 @@
                             </div>
                         </div>
                     </div>
-                    @endif
                 @endforeach
             </div>
         </div>
