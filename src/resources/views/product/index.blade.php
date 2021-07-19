@@ -35,7 +35,7 @@
                             視聴回数の多い順
                         </option>
                         <option value="good_number_rate" @if($order === 'good_number_rate') selected @endif>
-                            いいね率の高い順（いいね数 / 視聴回数）
+                            いいね率の高い順
                         </option>
                     </select>
                 </form>
