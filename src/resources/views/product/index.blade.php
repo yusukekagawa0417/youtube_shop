@@ -4,6 +4,16 @@
     <section>
         @include('shared.hero')
         <div class="search">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+               class="twitter-share-button"
+               data-show-count="false"
+               data-size="large"
+               data-text="書籍ランキングサイトYouTubeRank"
+               data-hashtags="YouTubeRank"
+               data-url="https://youtube-rank.net/">
+                Tweet
+            </a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <div class="search__info">
                 @php
                     if (!empty($genre_name)) {
