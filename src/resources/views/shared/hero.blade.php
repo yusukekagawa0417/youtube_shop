@@ -1,7 +1,7 @@
 <div class="hero">
     <img src="{{ asset('/image/hero-book2.jpg') }}" class="hero__image">
     <p class="hero__info">
-      書籍紹介のYouTube動画を集計し
+      YouTube上の書籍紹介動画を集計し
       <br>
       いいね数や視聴回数をもとに
       <br>

@@ -1,4 +1,12 @@
 .btn {
+  &__twitter {
+    display: flex;
+    justify-content:space-between;
+    padding: 0 12px 8px;
+    @include pc {
+      padding: 8px 36px;
+    };
+  }
   &__amazon {
     width: 140px;
     margin-top: 28px;

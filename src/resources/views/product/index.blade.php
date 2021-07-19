@@ -3,7 +3,9 @@
 @section('content')
     <section>
         @include('shared.hero')
-        <div class="search">
+        <div class="btn__twitter">
+            <div>
+            </div>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
                class="twitter-share-button"
                data-show-count="false"
@@ -14,6 +16,8 @@
                 Tweet
             </a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="search">
             <div class="search__info">
                 @php
                     if (!empty($genre_name)) {
