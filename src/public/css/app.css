@@ -47,6 +47,16 @@
   transform: translateY(-50%) rotate(315deg);
 }
 
+.btn__twitter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px 8px;
+}
+@media only screen and (min-width: 480px) {
+  .btn__twitter {
+    padding: 8px 36px;
+  }
+}
 .btn__amazon {
   width: 140px;
   margin-top: 28px;
