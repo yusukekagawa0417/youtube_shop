@@ -11,7 +11,7 @@
                data-show-count="false"
                data-size="large"
                data-text="書籍ランキングサイトYouTubeRank"
-               data-hashtags="YouTubeRank"
+               data-hashtags="YouTubeRank,本,書籍,ランキング"
                data-url="https://youtube-rank.net/">
                 Tweet
             </a>
